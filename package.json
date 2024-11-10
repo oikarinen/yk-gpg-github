@@ -23,6 +23,7 @@
     "*.js": "prettier --write",
     "*.md": "prettier --write",
     "*.y[a]ml": "prettier --write",
-    ".github/workflows/*.yml": "actionlint"
+    ".github/workflows/*.yml": "actionlint",
+    "*.py": "ruff check --fix && ruff format"
   }
 }

@@ -31,3 +31,16 @@ updates:
     commit-message:
       prefix: "chore"
       include: "scope"
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      pip:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+    commit-message:
+      prefix: "chore"
+      include: "scope"

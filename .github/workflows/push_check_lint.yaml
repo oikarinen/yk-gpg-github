@@ -3,7 +3,6 @@ name: Push linter checks
 on:
   push:
 
-
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -37,3 +36,9 @@ jobs:
           fail_on_error: true
           level: error
           yamllint_flags: "--no-warnings ."
+
+      - name: shellcheck
+        uses: reviewdog/action-shellcheck@4c07458293ac342d477251099501a718ae5ef86e # v1
+        with:
+          fail_on_error: true
+          exclude: "./.git/*"

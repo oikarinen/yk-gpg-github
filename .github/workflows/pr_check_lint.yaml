@@ -28,16 +28,3 @@ jobs:
           FROM: ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }}
           TO: ${{ github.event.pull_request.head.sha }}
         run: pnpm commitlint --from "$FROM" --to "$TO" --verbose
-
-  reviewdog:
-    permissions:
-      contents: read
-      pull-requests: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: shellcheck
-        uses: reviewdog/action-shellcheck@4c07458293ac342d477251099501a718ae5ef86e # v1
-        with:
-          fail_on_error: true
-          reporter: github-pr-review
-          exclude: "./.git/*"
