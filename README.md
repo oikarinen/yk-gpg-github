@@ -10,5 +10,11 @@ day someone will write a better tool for this purpose. Some pointers:
 * https://github.com/FiloSottile/yubikey-agent
 
 # Usage
+First set your git user email and name like
+```sh
+git config --global user.email "first.last@domain.com"
+git config --global user.name "First Last"
+```
 
-`./main.sh [--force] [--email foo@bar]`
+Then run:
+`./main.sh [--force]`
