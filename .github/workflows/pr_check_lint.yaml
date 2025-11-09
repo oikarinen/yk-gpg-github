@@ -2,22 +2,22 @@ name: PR linter checks
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize, ready_for_review]
+    types: [ opened, reopened, synchronize, ready_for_review ]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
 
       - name: Setup pnpm and install deps
-        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v3
+        uses: pnpm/action-setup@a3252b78c470c02df07e9d59298aecedc3ccdd6d # v3
         with:
           run_install: |
             - recursive: false
@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: shellcheck
-        uses: reviewdog/action-shellcheck@ccaafec556ffa154f112bfcb7b9c9574190b7091 # v1
+        uses: reviewdog/action-shellcheck@4c07458293ac342d477251099501a718ae5ef86e # v1
         with:
           fail_on_error: true
           reporter: github-pr-review
