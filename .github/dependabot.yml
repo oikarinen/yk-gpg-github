@@ -10,8 +10,24 @@ updates:
     schedule:
       interval: "weekly"
     groups:
-      gha-all:
+      gha:
         applies-to: version-updates
         update-types:
           - "minor"
           - "patch"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      npm:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+    commit-message:
+      prefix: "chore"
+      include: "scope"
