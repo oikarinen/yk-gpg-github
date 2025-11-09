@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4
 
       - name: Setup pnpm and install deps
-        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v3
+        uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v3
         with:
           run_install: |
             - recursive: false
@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: shellcheck
-        uses: reviewdog/action-shellcheck@ccaafec556ffa154f112bfcb7b9c9574190b7091 # v1
+        uses: reviewdog/action-shellcheck@4c07458293ac342d477251099501a718ae5ef86e # v1
         with:
           fail_on_error: true
           reporter: github-pr-review
