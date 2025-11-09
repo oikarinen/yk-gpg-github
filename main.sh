@@ -216,9 +216,11 @@ function gpg_card_generate_key() {
             stty echo
             puts "\rNow generating the key, this will take a while..."
             set timeout -1
+            puts "\rDone generating the key"
+
         }
         expect "public and secret key created and signed." {
-            set timeout 10
+            set timeout 60
             send -- "q\r"
             expect eof
         }
