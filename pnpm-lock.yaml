@@ -12,8 +12,8 @@ devDependencies:
     specifier: 19.2.0
     version: 19.2.0(@types/node@24.10.0)(typescript@5.9.3)
   '@commitlint/config-conventional':
-    specifier: 19.1.0
-    version: 19.1.0
+    specifier: 20.0.0
+    version: 20.0.0
   '@commitlint/prompt-cli':
     specifier: 19.2.0
     version: 19.2.0(@types/node@24.10.0)(typescript@5.9.3)
@@ -60,11 +60,11 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-conventional@19.1.0:
-    resolution: {integrity: sha512-KIKD2xrp6Uuk+dcZVj3++MlzIr/Su6zLE8crEDQCZNvWHNQSeeGbzOlNtsR32TUy6H3JbP7nWgduAHCaiGQ6EA==}
+  /@commitlint/config-conventional@20.0.0:
+    resolution: {integrity: sha512-q7JroPIkDBtyOkVe9Bca0p7kAUYxZMxkrBArCfuD3yN4KjRAenP9PmYwnn7rsw8Q+hHq1QB2BRmBh0/Z19ZoJw==}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 19.5.0
+      '@commitlint/types': 20.0.0
       conventional-changelog-conventionalcommits: 7.0.2
     dev: true
 
@@ -232,6 +232,14 @@ packages:
       chalk: 5.3.0
     dev: true
 
+  /@commitlint/types@20.0.0:
+    resolution: {integrity: sha512-bVUNBqG6aznYcYjTjnc3+Cat/iBgbgpflxbIBTnsHTX0YVpnmINPEkSRWymT2Q8aSH3Y7aKnEbunilkYe8TybA==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@types/conventional-commits-parser': 5.0.2
+      chalk: 5.6.2
+    dev: true
+
   /@inquirer/figures@1.0.7:
     resolution: {integrity: sha512-m+Trk77mp54Zma6xLkLuY+mvanPxlE4A7yNKs2HBiyZ4UkVs28Mv5c/pgWrHeInx+USHeX/WEPzjrWrcJiQgjw==}
     engines: {node: '>=18'}
@@ -241,6 +249,12 @@ packages:
     resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
     dependencies:
       '@types/node': 22.8.6
+    dev: true
+
+  /@types/conventional-commits-parser@5.0.2:
+    resolution: {integrity: sha512-BgT2szDXnVypgpNxOK8aL5SGjUdaQbC++WZNjF1Qge3Og2+zhHj+RWhmehLhYyvQwqAmvezruVfOf8+3m74W+g==}
+    dependencies:
+      '@types/node': 24.10.0
     dev: true
 
   /@types/node@22.8.6:
@@ -357,6 +371,11 @@ packages:
 
   /chalk@5.3.0:
     resolution: {integrity: sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
+    dev: true
+
+  /chalk@5.6.2:
+    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
