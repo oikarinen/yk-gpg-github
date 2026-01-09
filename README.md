@@ -5,7 +5,9 @@ Git config should have email address set
 
 Git config should have user name set
 
-```
+```sh
+git config --global user.email "your@email.com"
+git config --global user.name "Your Name"
 ~/.gnupg              # folder needs to exist
 chmod 700 ~/.gnupg    # folder should have following access rights
 ```
