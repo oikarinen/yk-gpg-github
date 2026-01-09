@@ -1,5 +1,5 @@
 # Requirements
-Node 22+
+Node.js version 22 or higher
 
 Git config should have email address set
 
