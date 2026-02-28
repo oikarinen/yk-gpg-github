@@ -1,3 +1,17 @@
+# Requirements
+Node.js version 22 or higher
+
+Git config should have email address set
+
+Git config should have user name set
+
+```sh
+git config --global user.email "your@email.com"
+git config --global user.name "Your Name"
+~/.gnupg              # folder needs to exist
+chmod 700 ~/.gnupg    # folder should have following access rights
+```
+
 # yk-gpg-github
 
 Generate new GPG key on a Yubikey for signing commits and add it to GitHub. The private key never leaves the device.
