@@ -4,7 +4,7 @@
   "devDependencies": {
     "@commitlint/cli": "20.4.2",
     "@commitlint/config-conventional": "19.1.0",
-    "@commitlint/prompt-cli": "19.2.0",
+    "@commitlint/prompt-cli": "20.4.2",
     "husky": "9.1.7",
     "lint-staged": "15.2.10",
     "prettier": "3.6.2"
