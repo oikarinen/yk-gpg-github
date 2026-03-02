@@ -14,7 +14,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@395ad3262231945c25e8478fd5baf05154b1d79f # v4
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v4
 
       - name: Setup pnpm and install deps
         uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v3
@@ -27,7 +27,7 @@ jobs:
         run: pnpm exec lint-staged --verbose
 
       - name: actionlint
-        uses: reviewdog/action-actionlint@83e4ed25b168066ad8f62f5afbb29ebd8641d982 # v1
+        uses: reviewdog/action-actionlint@0d952c597ef8459f634d7145b0b044a9699e5e43 # v1
         with:
           fail_on_error: true
 
